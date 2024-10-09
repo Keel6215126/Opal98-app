@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databa$e</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace; /* Terminal-like font */
+      background-color: #000;
+      color: #00FF00; /* Green text */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: #00FF00; /* Green text */
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #00FF00; /* Green text */
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid #00FF00; /* Green border */
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .method-description {
+      height: auto;
+      overflow: hidden;
+      transition: height 0.3s ease;
+    }
+
+    .method-expanded {
+      height: 100%;
+    }
+
+    .method-button {
+      background-color: #00FF00; /* Green background */
+      color: #000; /* Black text */
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .method-button:hover {
+      background-color: #008000; /* Darker green on hover */
+    }
+
+    .suggest-button {
+      background-color: #00FF00; /* Green background */
+      color: #000; /* Black text */
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto; /* Center the button */
+      margin-bottom: 20px; /* Add some space below the button */
+    }
+
+    .suggest-button:hover {
+      background-color: #008000; /* Darker green on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Databa$e</h1>
+  </header>
+  <main>
+    <button class="suggest-button" onclick="openFile()">Suggest a Method</button>
+    <section id="methods">
+      <h2>Methods</h2>
+      <ul id="method-list">
+        <!-- All methods are represented by text descriptions -->
+        <li>
+          <h3>Welcome!</h3>
+          <p class="method-description">Welcome, please submite methods at the top of the screen.<br>
+          </p>
+        </li>
+        <li>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function openFile() {
+      // Replace 'YOUR_FILE_URL' with the URL of the file you want to open
+      window.open('https://forms.gle/1oe15HSnwJ3NuqNw8', '_blank');
+    }
+  </script>
+</body>
+</html>
